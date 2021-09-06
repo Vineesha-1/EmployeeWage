@@ -1,3 +1,12 @@
 #! /bin/bash -x
 
-echo "Welcome to EmployeeWage Attendance system"
+IS_PRESENT=1
+empCheck=$((RANDOM%2))
+if [ $empCheck -eq $IS_PRESENT ]
+then
+   echo " employee is present "
+else
+   echo " employee is absent "
+fi
+
+
